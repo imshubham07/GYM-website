@@ -25,10 +25,13 @@
         top: 23px;
         left: 22px;
     }
+    .left img{
+        width: 77px;
+    }
 
     .mid {
         display: block;
-        width: 23%;
+        width: 27%;
         margin: 23px auto;
         border: 2px solid blueviolet;
     }
@@ -40,17 +43,37 @@
         display: inline-block;
         border: 2px solid yellow;
     }
+    .navbar{
+        display: inline-block;
+    }
+    .navbar li{
+        display: inline-block;
+    }
+    .navbar li a{
+        color: white;
+        text-decoration: none;
+    }
+    .navbar li a:hover,.navbar li a.active{
+        text-decoration: underline;
+        color: gray;
+    }
+    
 </style>
 
 <body>
     <header class="header">
         <!-- left box for logo -->
         <div class="left">
-            i am left
+            <img src="img/logo.png" alt="Fitness Guru">
         </div>
         <!-- mid box for navigation bar -->
         <div class="mid">
-            i am mid
+            <ul class="navbar">
+                <li><a href="#" class="active"> Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
         </div>
         <!-- right box for buttoms -->
         <div class="right">
