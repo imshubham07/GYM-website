@@ -18,19 +18,21 @@
     }
 
     .left {
+        /* border: 2px solid red; */
         display: inline-block;
-        border: 2px solid red;
         position: absolute;
-        top: 23px;
-        left: 22px;
+        top: 20px;
+        left: 41px;
     }
-    .left img{
-        
+
+    .left img {
+
         width: 77px;
         /* invert function are use to change the colour of img */
         filter: invert(100%);
     }
-    .left div{
+
+    .left div {
         line-height: 19px;
         font-size: 20px;
         text-align: center;
@@ -38,53 +40,87 @@
 
     .mid {
         display: block;
-        width: 27%;
-        margin: 23px auto;
-        border: 2px solid blueviolet;
+        width: 30%;
+        margin: 32px auto;
+        /* border: 2px solid green; */
     }
 
     .right {
+        /* border: 2px solid blue; */
         position: absolute;
-        top: 23px;
-        right: 22px;
+        top: 46px;
+        right: 36px;
         display: inline-block;
-        border: 2px solid yellow;
+    
     }
-    .navbar{
-        display: inline-block;
-    }
-    .navbar li{
+
+    .navbar {
         display: inline-block;
     }
-    .navbar li a{
+
+    .navbar li {
+        display: inline-block;
+    }
+
+    .navbar li a {
         color: white;
         text-decoration: none;
+        padding: 0px 5px;
     }
-    .navbar li a:hover,.navbar li a.active{
+
+    .navbar li a:hover,
+    .navbar li a.active {
         text-decoration: underline;
         color: gray;
     }
-    .btn{
+
+    .btn {
         margin: 0px 8px;
         color: white;
         background-color: black;
         padding: 3px 4px;
         border: 2px solid gray;
         border-radius: 12px;
-        font-size: 20px ;
+        font-size: 20px;
         cursor: pointer;
     }
-    .btn :hover{
+
+    .btn :hover {
         background-color: rgb(85, 83, 83);
     }
-    .container{
-        border: 2px solid green;
-        margin: 12px 20px;
-        padding: 20px 94px;
-        width: 29%;
-        border-radius: 2px;
+
+    .container {
+        border: 2px solid rgb(245, 250, 245);
+        margin: 88px 100px;
+        padding: 16px 16px;
+        width: 31%;
+        border-radius: 12px;
     }
-    </style>
+
+    .form input {
+        text-align: center;
+        display: block;
+        width: 196px;
+        padding: 4px;
+        border: 2px solid black;
+        margin: 2px auto;
+    }
+
+    h1{
+        text-align: center;
+
+    }
+
+    .container .btn {
+        display: block;
+        width: 48%;
+        margin: auto;
+        text-align: center;
+    }
+
+    }
+</style>
+
 <body>
     <header>
         <!-- left box for logo -->
@@ -103,29 +139,31 @@
         </div>
         <!-- right box for buttoms -->
         <div class="right">
-            <button class="btn">Call Us Now</button>
-            <button class="btn">Email</button>
+            <button id="btn">Call Us Now</button>
+            <button id="btn">Email</button>
         </div>
     </header>
     <div class="container">
-        <h1>best gym in the gopalganj</h1>
+        <h1>Best GYM in the Gopalganj</h1>
         <!-- /*no action php is the backend we can change */ -->
         <form action="noaxen.php">
             <div class="form">
                 <input type="text" name="" placeholder="Enter Your Name">
             </div>
             <div class="form">
-                <input type="text" name="" placeholder="Enter Your Name">
+                <input type="email" name="" placeholder="Enter Your Email">
             </div>
             <div class="form">
-                <input type="text" name="" placeholder="Enter Your Name">
+                <input type="text" name="" placeholder="Enter Your Number">
             </div>
             <div class="form">
-                <input type="text" name="" placeholder="Enter Your Name">
+                <input type="text" name="" placeholder="Enter Your Address">
             </div>
-            <botton class="btn"></botton>
+            <botton class="btn">
+                submit
+            </botton>
         </form>
-        </div>
+    </div>
 </body>
 
 </html>
