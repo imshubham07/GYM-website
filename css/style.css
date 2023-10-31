@@ -1,1 +1,109 @@
+  /* css reset -> means we change margin and pading */
+  body {
+    color: white;
+    margin: 0px;
+    padding: 0px;
+    /* url is a function used to give the path of img */
+    background: url('img/img2.jpg');
+}
 
+.left {
+    /* border: 2px solid red; */
+    display: inline-block;
+    position: absolute;
+    top: 20px;
+    left: 41px;
+}
+
+.left img {
+
+    width: 77px;
+    /* invert function are use to change the colour of img */
+    filter: invert(100%);
+}
+
+.left div {
+    line-height: 19px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.mid {
+    display: block;
+    width: 30%;
+    margin: 32px auto;
+    /* border: 2px solid green; */
+}
+
+.right {
+    /* border: 2px solid blue; */
+    position: absolute;
+    top: 46px;
+    right: 36px;
+    display: inline-block;
+
+}
+
+.navbar {
+    display: inline-block;
+}
+
+.navbar li {
+    display: inline-block;
+}
+
+.navbar li a {
+    color: white;
+    text-decoration: none;
+    padding: 0px 5px;
+}
+
+.navbar li a:hover,
+.navbar li a.active {
+    text-decoration: underline;
+    color: gray;
+}
+
+.btn {
+    margin: 0px 8px;
+    color: white;
+    background-color: black;
+    padding: 3px 4px;
+    border: 2px solid gray;
+    border-radius: 12px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.btn :hover {
+    background-color: rgb(85, 83, 83);
+}
+
+.container {
+    border: 2px solid rgb(245, 250, 245);
+    margin: 88px 100px;
+    padding: 16px 16px;
+    width: 31%;
+    border-radius: 12px;
+}
+
+.form input {
+    text-align: center;
+    display: block;
+    width: 196px;
+    padding: 4px;
+    border: 2px solid black;
+    margin: 2px auto;
+}
+
+h1{
+    text-align: center;
+
+}
+
+.container .btn {
+    display: block;
+    width: 48%;
+    margin: auto;
+    text-align: center;
+}
